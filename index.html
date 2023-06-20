@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Ciencia de datos aplicando Inteligencia Artificial</title>
+    <link rel="icon" type="image/vnd.icon" href="./img/um.ico">
+
+    <!-- Fonts personalizadas -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Estilos propios-->
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+    
+    <div id="wrapper">
+
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                <div class="sidebar-brand-icon rotate-n-15">
+                    <i class="fas fa-university"></i>
+                </div>
+                <div class="sidebar-brand-text mx-3">Trabajo de Campo </div>
+            </a>
+
+            <hr class="sidebar-divider my-0">
+
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Dashboard</span></a>
+            </li>
+
+
+            <hr class="sidebar-divider">
+
+            <div class="sidebar-heading">
+                Proyecto
+            </div>
+
+            <li class="nav-item">
+                <a class="nav-link" href="./objetivos.html">
+                    <i class="fas fa-fw fa-chart-area"></i>
+                    <span>Objetivo</span></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="tables.html">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>Alcance</span></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="./problematica.html">
+                    <i class="far fa-fw fa-lightbulb"></i>
+                    <span>Problemática</span></a>
+            </li>
+
+           
+
+            <li class="nav-item">
+                <a class="nav-link" href="./factibilidades.html">
+                    <i class="fas fa-fw fa-wrench"></i>
+                    <span>Factibilidades</span></a>
+            </li>
+
+            <li class="nav-item ">
+                <a class="nav-link" href="./dataset.html">
+                    <i class="fas fa-regular fa-database"></i>
+                    <span>Data Set</span></a>
+            </li>
+
+
+            <hr class="sidebar-divider d-none d-md-block">
+
+            <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>
+        </ul>
+
+        <div id="content-wrapper" class="d-flex flex-column">
+            <div id="content">
+
+
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <form
+                        class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                        <div class="input-group">
+                            <input type="text" class="form-control bg-light border-0 small" placeholder="Buscar..."
+                                aria-label="Search" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" type="button">
+                                    <i class="fas fa-search fa-sm"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <ul class="navbar-nav ml-auto">
+
+                        <li class="nav-item dropdown no-arrow d-sm-none">
+                            <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-search fa-fw"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+                                aria-labelledby="searchDropdown">
+                                <form class="form-inline mr-auto w-100 navbar-search">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control bg-light border-0 small"
+                                            placeholder="Search for..." aria-label="Search"
+                                            aria-describedby="basic-addon2">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-primary" type="button">
+                                                <i class="fas fa-search fa-sm"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+                        <div class="topbar-divider d-none d-sm-block"></div>
+
+                         <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Mariano Nicolás Miguez - 47010305</span>
+                                <img class="img-profile rounded-circle" src="img/undraw_profile.svg">
+                            </a>
+                        </li>
+
+                    </ul>
+                </nav>
+
+                <!--Acordion para visualizaciones-->
+                <div id="accordion">
+                    <div class="card">
+                      <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Visualizaciones
+                          </button>
+                        </h5>
+                      </div>
+                  
+                      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="card-group">
+
+                                <div class="card">
+                                  <img class="card-img-top" src="./img/Box1.png" alt="Card image cap">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Edad cliente</h5>
+                                    <p class="card-text">Observamos una distribucion Normal en la edad de los clientes.</p>
+                                  </div>
+                                </div>
+                                <div class="card">
+                                  <img class="card-img-top" src="./img/Box2.png" alt="Card image cap">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Limite de crédito</h5>
+                                    <p class="card-text">Observamos una distribucion lognormal con un sesgo hacia la izquierda.</p>
+                                  </div>
+                                </div>
+                        </div>
+
+                        <div class="py-5">
+                            <img src="./img/scatterPlot.png" class="img-fluid" alt="Responsive image">
+                        </div>
+
+                        <div class="py-5">
+                            <img src="./img/ScatterPlot 2.png" class="img-fluid" alt="Responsive image">
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <div class="card">
+                      <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Histogramas
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body">
+
+                            <div class="py-5">
+                                <img src="./img/histograma1.png" class="img-fluid" alt="Responsive image">
+                                <p class="card-text">
+                                    Creamos un subset de datos para ver que tendencias existen entre los clientes que cancelaron su servicio de tarjeta 
+                                    de crédito para entender las razones. Podemos calcular los porcentajes de las categorías más importantes para empezar
+                                    a ver las tendencias.
+                                </p>
+                            </div>
+                            <div class="py-5">
+                                <img src="./img/histograma2.png" class="img-fluid" alt="Responsive image">
+                                <p class="card-text">
+                                    Con este gráfico observamos que la mayoría de las cancelaciones (alrededor de 93%) corresponden a 
+                                    tarjetas de la categoria "Blue" que es la más básica. Un menor porcentaje de cancelaciones (en torno al 7%) corresponde
+                                    al segmento premium (Silver, Gold, Platinum)
+                                </p>
+                            </div>
+                            <div class="py-5">
+                                <img src="./img/histograma3.png" class="img-fluid" alt="Responsive image">
+                                <p class="card-text">
+                                    Con este gráfico observamos que aproximadamente un 43% de las cancelaciones corresponden a personas casadas,
+                                    mientras que aproximadamente un 41% de las cancelaciones es de personas solteras. Estas dos categorias explican más
+                                    del 84% de las cancelaciones. Se observa una marcada disminución de cancelaciones entre las personas divorciadas.
+                                </p>
+                            </div>
+                            <div class="py-5">
+                                <img src="./img/histograma4.png" class="img-fluid" alt="Responsive image">
+                                <p class="card-text">
+                                    Con este gráfico observamos que las cancelaciones van disminuyendo a
+                                    medida que se incrementa el ingreso anual (hacia la derecha se encuentran las categorias de ingreso más altas).
+                                </p>
+                            </div>
+                            <div class="py-5">
+                                <img src="./img/histograma5.png" class="img-fluid" alt="Responsive image">
+                                <p class="card-text">
+                                    En este gráfico podemos agrupar las categorías de la siguiente forma: El primer grupo los estudiantes secundarios y Universitarios
+                                    ("Graduate" + "High School"). El segundo grupo los desconocidos y sin estudios ("Unknown" + "Uneducated"). El último grupo los de
+                                    estudios avanzados (College, Doctorate y Post-Graduate). Con esa agrupacion, vemos que la mayoría de cancelaciones corresponden al
+                                    primer grupo, de estudiantes secundarios y Universitarios. Sería interesante estudiar en conjunto con la distribución etaria de estos
+                                    dos grupos.
+                                </p>
+                            </div>
+                            <div class="py-5">
+                                <img src="./img/histograma6.png" class="img-fluid" alt="Responsive image">
+                                <p class="card-text">
+                                    Distribución del total de transferencia en los últimos 12 meses.
+                                    Se observa una distribución bimodal y una moda en torno a las 80 transferencias.
+                                </p>
+                            </div>
+
+                           
+
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card">
+                      <div class="card-header" id="headingThree">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Modelos de aprendizaje supervisado
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                        <div class="card-body">
+                            <p class="card-text">
+                                Para los modelos de aprendizaje, vamos a probar 3 diferentes. Estos algoritmos son los más comunmente utilizados en 
+                                aprendizaje supervizado. Son los más sencillos y a la vez los mas potentes: "k" nearest neighbors (kNN), Support vector
+                                machines (SVM) y Random Forests (RF). Una vez confeccionado y entrenado cada modelo se calcula el "accuracy score"
+                                que mide la precisión del modelo comparando las predicciones hechas contra los valores de entrenamiento.
+                            </p>
+                            <img src="./img/Matrix confusion.png" class="img-fluid" alt="Responsive image">
+                            <p class="py-3 card-text">
+                                Observamos que el modelo que obtiene el mejor score es el RF. El mismo logra una precisión del 93.6%.
+                            </p>
+                            <p class="py-2 card-text">
+                                Las matrices de confusión para cada modelo permiten observar la performance de la clasifcación. Podemos observar que el modelo logra 
+                                predecir gran cantidad de Verdaderos Negativos (en este caso, clientes que no cancelaron su TC) y hace un buen trabajo en la predicción de
+                                Verdaderos Positivos (clientes que cancelaron su TC). Esto tiene sentido ya que inicialmente en los datos de entrenamiento una gran proporción 
+                                corresponde a clientes que mantuvieron su TC. Este es un sesgo que posee el dataset. De todas maneras los scores de los modelos son satisfactorios.
+                            </p>
+                            
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+               
+
+
+
+            </div>
+
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Copyright &copy;  Website 2023 - Mariano Nicolás Miguez</span>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+
+    </div>
+
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                    <a class="btn btn-primary" href="login.html">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="vendor/chart.js/Chart.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="js/demo/chart-area-demo.js"></script>
+    <script src="js/demo/chart-pie-demo.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.3.0/chart.min.js" integrity="sha512-mlz/Fs1VtBou2TrUkGzX4VoGvybkD9nkeXWJm3rle0DPHssYYx4j+8kIS15T78ttGfmOjH0lLaBXGcShaVkdkg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src='https://cdn.plot.ly/plotly-2.24.1.min.js'></script>
+
+   
+    <!--Script de Chart JS-->
+    <script>
+            var ctx= document.getElementById("myChart").getContext("2d");
+            var myChart= new Chart(ctx,{
+                type:"pie",
+                data:{
+                    labels:['Attrieted costumer','Existing costumer'],
+                    datasets:[{
+                            label:'Num datos',
+                            data:[16.1,83.9],
+                            backgroundColor:[
+                                'rgb(66, 134, 244,0.8)',
+                                'rgb(74, 135, 72,0.8)'
+                            ]
+                    }]
+                },
+                options:{
+                    scales:{
+                        yAxes:[{
+                                ticks:{
+                                    beginAtZero:true
+                                }
+                        }]
+                    }
+                }
+            });
+    </script>
+       <!--FIN Script de Chart JS-->
+
+</body>
+
+</html>
